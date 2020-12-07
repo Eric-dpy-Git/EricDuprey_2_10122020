@@ -1,0 +1,7 @@
+@font-face {
+  /* Définition des nouvelles polices nommées Raleway */
+  font-family: "Raleway";
+  src: url("font/Raleway-VariableFont_wght.ttf");
+  font-family: "Ralewayitalic";
+  src: url("font/Raleway-Italic-VariableFont_wght.ttf");
+}
