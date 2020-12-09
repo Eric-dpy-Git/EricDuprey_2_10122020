@@ -47,18 +47,23 @@ li {
 .resultpick {
   display: flex;
   flex-direction: column;
-  width: 160px;
-  height: 140px;
+  width: 200px;
+  height: 180px;
   background-color: white;
+  border-radius: 8%;
 }
 .img_result {
-  width: 150px;
-  height: 70px;
-  margin: 5px 5px 0px 5px;
+  width: 95%;
+  height: 50%;
+  align-self: center;
+  margin-top: 3%;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
 }
 .description_contener {
   width: 95%;
   height: 95%;
+  align-self: center;
 }
 .titlepick {
   font-size: 0.8em;
