@@ -24,3 +24,14 @@ li {
   margin: auto;
   margin-left: 20px;
 }
+#result_pop {
+  width: 60%;
+  background-color: lightgrey;
+}
+#result {
+  display: flex;
+}
+.img_result {
+  width: 120px;
+  height: 70px;
+}
