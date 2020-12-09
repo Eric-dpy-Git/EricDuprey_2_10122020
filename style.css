@@ -26,13 +26,28 @@ li {
 }
 #result_pop {
 }
+#result_title {
+  display: flex;
+  align-items: flex-start;
+}
 #result {
+  width: 60%;
+  height: 400px;
+  background-color: rgb(230, 223, 223);
+}
+#resultpickbox {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  background-color: lightgrey;
+  justify-content: space-around;
 }
 .img_result {
   width: 120px;
   height: 70px;
+  margin: 5px 5px 0px 5px;
+}
+.resultpick {
+  display: flex;
+  width: 140px;
+  height: 120px;
+  background-color: white;
 }
