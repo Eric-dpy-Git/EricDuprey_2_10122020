@@ -25,11 +25,12 @@ li {
   margin-left: 20px;
 }
 #result_pop {
-  width: 60%;
-  background-color: lightgrey;
 }
 #result {
   display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  background-color: lightgrey;
 }
 .img_result {
   width: 120px;
