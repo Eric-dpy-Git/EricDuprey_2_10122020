@@ -46,7 +46,7 @@ li {
 }
 .resultpick {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 160px;
   height: 140px;
   background-color: white;
@@ -55,4 +55,8 @@ li {
   width: 150px;
   height: 70px;
   margin: 5px 5px 0px 5px;
+}
+.titlepick {
+  font-size: 0.8em;
+  margin-left: 7px;
 }
