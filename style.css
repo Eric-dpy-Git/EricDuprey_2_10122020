@@ -5,3 +5,14 @@
   font-family: "Ralewayitalic";
   src: url("font/Raleway-Italic-VariableFont_wght.ttf");
 }
+
+#banner {
+  display: flex;
+}
+#topnav {
+  display: flex;
+}
+li {
+  margin-left: 20px;
+  display: block;
+}
