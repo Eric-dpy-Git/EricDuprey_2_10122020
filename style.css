@@ -56,6 +56,10 @@ li {
   height: 70px;
   margin: 5px 5px 0px 5px;
 }
+.description_contener {
+  width: 95%;
+  height: 95%;
+}
 .titlepick {
   font-size: 0.8em;
   margin-left: 7px;
