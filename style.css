@@ -24,14 +24,13 @@ li {
   margin: auto;
   margin-left: 20px;
 }
-#result_pop {
-}
+
 #result_title {
   display: flex;
   align-items: flex-start;
 }
 #result {
-  width: 60%;
+  width: 800px;
   height: 500px;
   background-color: #f2f2f2;
 }
@@ -79,4 +78,40 @@ li {
 .fas,
 .fa-star {
   color: #0065fc;
+}
+#result_for_flex {
+}
+#aside_for_flex {
+  width: 25%;
+  background-color: #f2f2f2;
+}
+#poppickbox {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+}
+.poppick {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 8%;
+}
+.img_pop {
+  width: 95%;
+  height: 50%;
+  align-self: center;
+  margin-top: 3%;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
+}
+
+#test_flex {
+  display: flex;
+  justify-content: space-around;
 }
