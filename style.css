@@ -6,34 +6,48 @@
   src: url("font/Raleway-Italic-VariableFont_wght.ttf");
 }
 
+/* pour mettre la partie "topnav" à droite du logo */
 #banner {
   display: flex;
 }
+
+/* pour avoir les éléments de navigation sur une ligne */
 #topnav {
   display: flex;
 }
+
+/* pas de puces et pas de chevauchement */
 li {
   margin-left: 20px;
   display: block;
 }
+
+/* pour avoir les boutons de filtre sur une ligne */
 #filter_nav {
   display: flex;
 }
+
+/* pas de puces et pas de chevauchement*/
 .filter {
   display: block;
   margin: auto;
   margin-left: 20px;
 }
 
+/* À verifier --> mauvais alignement */
 #result_title {
   display: flex;
   align-items: flex-start;
 }
+
+/* contener des résultats --> taille à revoir */
 #result {
   width: 800px;
   height: 500px;
   background-color: #f2f2f2;
 }
+
+/*  */
 #resultpickbox {
   width: 90%;
   height: 90%;
@@ -43,6 +57,8 @@ li {
   align-content: space-around;
   align-items: center;
 }
+
+/* conteneur images et texte "result" */
 .resultpick {
   display: flex;
   flex-direction: column;
@@ -51,6 +67,8 @@ li {
   background-color: white;
   border-radius: 8%;
 }
+
+/* images des résultats */
 .img_result {
   width: 95%;
   height: 50%;
@@ -59,32 +77,44 @@ li {
   border-top-right-radius: 8%;
   border-top-left-radius: 8%;
 }
+
+/* pour avoir un conteneur des informations l'image */
 .description_contener {
   width: 95%;
   height: 95%;
   align-self: center;
 }
+
+/* mise en forme u texte sous image */
 .titlepick {
   font-size: 0.8em;
   margin-left: 7px;
 }
+
+/* mise en forme u texte sous image */
 .subtitlepick {
   font-size: 0.5em;
   margin-left: 7px;
 }
+
+/* couleur des icônes étoiles fontawesome */
 #emptystar {
   color: #deebff;
 }
+
+/* couleur des icônes étoiles fontawesome */
 .fas,
 .fa-star {
   color: #0065fc;
 }
-#result_for_flex {
-}
+
+/* definition de conteneur pour mise en en page "article" et "aside" */
 #aside_for_flex {
   width: 25%;
   background-color: #f2f2f2;
 }
+
+/* contener du "aside" */
 #poppickbox {
   width: 90%;
   height: 90%;
@@ -94,6 +124,8 @@ li {
   align-content: space-around;
   align-items: center;
 }
+
+/* conteneur images et texte "pop" */
 .poppick {
   display: flex;
   flex-direction: row;
@@ -102,6 +134,8 @@ li {
   background-color: white;
   border-radius: 8%;
 }
+
+/* image des "pop" */
 .img_pop {
   width: 95%;
   height: 50%;
@@ -111,6 +145,7 @@ li {
   border-top-left-radius: 8%;
 }
 
+/* pour mettre la partie "asigne" à droite de la parie "result" */
 #test_flex {
   display: flex;
   justify-content: space-around;
