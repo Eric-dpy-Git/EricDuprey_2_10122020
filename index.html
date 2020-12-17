@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <!--------------------------------------------------------------head------------------------------------------------------>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -12,11 +13,13 @@
     <!--to link with Fontawesome-->
     <title>Reservia</title>
   </head>
+  <!--------------------------------------------------------------head------------------------------------------------------>
+  <!--------------------------------------------------------------body------------------------------------------------------>
   <body>
     <div id="page-wrapper">
       <!--to wrap up the full page -->
       <div id="header-wrapper">
-        <!--to wrap header-->
+        <!------------------------------------------------------start header------------------------------------------------->
         <header id="header" class="container">
           <!--id for specifics styles & class for generic styles-->
           <div class="div-header">
@@ -26,6 +29,7 @@
             <p>En plein centre ville ou en pleine nature</p>
           </div>
           <nav>
+            <!--nav inside header-->
             <ul class="container">
               <li>Hébérgements</li>
               <li>Activités</li>
@@ -33,16 +37,63 @@
             </ul>
           </nav>
         </header>
-        <nav>
-          <!--Search bar and location-->
-          <form id="allform" action="get">
-            <button id="geoloc"><i class="fas fa-map-marker-alt"></i></button
-            ><!--Integration of the fontawesome icon-->
-            <input type="search" name="Recherche" id="case" />
-            <input type="submit" value="Rechercher" id="bouton" />
-          </form>
-        </nav>
       </div>
+      <!---------------------------------------------------end header--------------------------------------------------->
+      <!---------------------------------------------------start nav---------------------------------------------------->
+      <nav>
+        <!--Search bar and location-->
+        <form id="allform" action="get">
+          <button id="geoloc"><i class="fas fa-map-marker-alt"></i></button
+          ><!--Integration of the fontawesome icon-->
+          <input type="search" name="Recherche" id="case" />
+          <input type="submit" value="Rechercher" id="bouton" />
+        </form>
+      </nav>
+      <!---------------------------------------------------end nav------------------------------------------------------>
+      <!---------------------------------------------------start nav---------------------------------------------------->
+      <nav class="main-filter-box">
+        <p>Filtres</p>
+        <!--cannot line up well with filters boxes-->
+        <div>
+          <!--------------------------start filter box---------------------------1-->
+          <p class="filter_box">
+            <button class="button_form">
+              <i class="fas fa-money-bill-wave"></i
+              ><!--Integration of the fontawesome icon-->
+            </button>
+            <span class="filter_text">Économique</span>
+          </p>
+        </div>
+        <div>
+          <!--------------------------start filter box--------------------------2-->
+          <p class="filter_box">
+            <button class="button_form">
+              <i class="fas fa-money-bill-wave"></i>
+            </button>
+            <span class="filter_text">Familial</span>
+          </p>
+        </div>
+        <div>
+          <!--------------------------start filter box--------------------------3-->
+          <p class="filter_box">
+            <button class="button_form">
+              <i class="fas fa-money-bill-wave"></i>
+            </button>
+            <span class="filter_text">Romantique</span>
+          </p>
+        </div>
+        <div>
+          <!--------------------------start filter box--------------------------4-->
+          <p class="filter_box">
+            <button class="button_form">
+              <i class="fas fa-money-bill-wave"></i>
+            </button>
+            <span class="filter_text">Animaux autorisés</span>
+          </p>
+        </div>
+      </nav>
     </div>
+    <!--------------------------end div, nav & filter box 1,2,3,4--------------------------------->
+    <!--------------------------------------------------------------body------------------------------------------------------>
   </body>
 </html>

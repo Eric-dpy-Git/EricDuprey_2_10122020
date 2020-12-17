@@ -8,6 +8,7 @@
 /*---------------------------------Header*/
 body {
   background-color: lightpink;
+  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*To make a page well centered*/
@@ -66,4 +67,42 @@ body {
   color: white;
   font-weight: 800;
   border: none;
+}
+/*---------------------------------nav*/
+/*---------------------------------Filter nav*/
+
+/*Use of Flex to get bloks online*/
+.main-filter-box {
+  width: 75%;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Use of Flex to get bloks online*/
+.button_form {
+  border-radius: 50%; /* to do a circle form */
+  border: none; /* border did'not go upside the "filter_text" frame */
+  width: 3em;
+  height: 3em;
+  background-color: #deebff;
+}
+
+/*Use of Flex to get bloks online*/
+.filter_box {
+  border: solid 0.2px;
+  border-top-left-radius: 30px; /* follow the circle button */
+  border-bottom-left-radius: 30px; /* follow the circle button */
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: fit-content;
+}
+
+.filter_text {
+  /* span class to add text inline */
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+
+  font-size: 0.5em;
 }
