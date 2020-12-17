@@ -5,10 +5,12 @@
   font-family: "Ralewayitalic";
   src: url("font/Raleway-Italic-VariableFont_wght.ttf");
 }
-
+/*---------------------------------Header*/
 body {
   background-color: lightpink;
 }
+
+/*To make a page well centered*/
 #page-wrapper {
   width: 1280px;
   background-color: khaki;
@@ -16,13 +18,52 @@ body {
   margin-left: auto;
 }
 
+/*Use of flex for layout*/
 .container {
   display: flex;
   justify-content: space-between;
   background-color: lawngreen;
 }
 
+/*Use of flex to get li online*/
 .container li {
   margin-left: 3em;
   list-style: none;
+}
+/*---------------------------------Header*/
+/*---------------------------------nav*/
+
+/*Background of the bar to make border*/
+#allform {
+  background-color: rgba(66, 66, 68, 0.2);
+  width: fit-content;
+  border-radius: 8px;
+}
+
+/*formatting the locate button*/
+#geoloc {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 3em;
+  width: 3em;
+}
+
+/*formatting the field*/
+#case {
+  border: none;
+  height: 2.8em;
+  width: 15em;
+  margin-right: -5px; /*To have no space between blocks*/
+  margin-left: -5px; /*To have no space between blocks*/
+}
+
+/*formatting the submit button*/
+#bouton {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 3em;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 800;
+  border: none;
 }
