@@ -13,7 +13,7 @@ body {
 
 /*To make a page well centered*/
 #page-wrapper {
-  width: 1280px;
+  width: 1660px;
   background-color: khaki;
   margin-right: auto;
   margin-left: auto;
@@ -31,8 +31,8 @@ body {
   margin-left: 3em;
   list-style: none;
 }
-/*---------------------------------Header*/
-/*---------------------------------nav*/
+/*------------------------------------------------------------------------------------------end Header*/
+/*-------------------------------------------------------------------------------------------------nav*/
 
 /*Background of the bar to make border*/
 #allform {
@@ -68,8 +68,8 @@ body {
   font-weight: 800;
   border: none;
 }
-/*---------------------------------nav*/
-/*---------------------------------Filter nav*/
+/*-----------------------------------------------------------------------------end nav*/
+/*--------------------------------------------------------------------------Filter nav*/
 
 /*Use of Flex to get bloks online*/
 .main-filter-box {
@@ -103,6 +103,74 @@ body {
   margin-right: 0.5em;
   font-size: 1.2em;
   font-weight: bold;
-
   font-size: 0.5em;
 }
+
+/*------------------------------------------------------------------------end Filter nav*/
+/*------------------------------------------------------------------------------section */
+
+.result {
+  background-color: #f2f2f2;
+  width: 60%;
+  height: 600px;
+  border-radius: 30px;
+}
+
+.resultpickbox {
+  width: 95%;
+  height: 550px;
+  background-color: lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* align-content: space-around;
+   */
+}
+
+.pickbox {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  background-color: lightslategrey;
+  border-radius: 8%;
+}
+
+.img_result {
+  width: 95%;
+  height: 50%;
+  align-self: center;
+  margin-top: 3%;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
+}
+
+/* pour avoir un conteneur des informations l'image */
+.description_contener {
+  width: 95%;
+  height: 95%;
+  align-self: center;
+}
+
+/* mise en forme du texte sous image */
+.titlepick {
+  font-size: 0.8em;
+  margin-left: 7px;
+}
+
+/* mise en forme u texte sous image */
+.subtitlepick {
+  font-size: 0.5em;
+  margin-left: 7px;
+}
+
+/* couleur des icônes étoiles fontawesome */
+.fas,
+.fa-star {
+  color: #0065fc;
+}
+
+/* couleur des icônes étoiles fontawesome */
+#emptystar {
+  color: #deebff;
