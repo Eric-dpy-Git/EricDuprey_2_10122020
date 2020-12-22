@@ -5,7 +5,7 @@
   font-family: "Ralewayitalic";
   src: url("font/Raleway-Italic-VariableFont_wght.ttf");
 }
-/*---------------------------------Header*/
+/*---------------------------------start header-----------------------------------------------------*/
 body {
   background-color: lightpink;
   font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
@@ -13,35 +13,35 @@ body {
 
 /*To make a page well centered*/
 #page-wrapper {
-  width: 1660px;
+  width: 1440px;
   background-color: khaki;
   margin-right: auto;
   margin-left: auto;
 }
 
-/*Use of flex for layout*/
+/*Use flex for header layout*/
 .container {
   display: flex;
   justify-content: space-between;
   background-color: lawngreen;
 }
 
-/*Use of flex to get li online*/
+/*maegin and no pint li*/
 .container li {
   margin-left: 3em;
   list-style: none;
 }
-/*------------------------------------------------------------------------------------------end Header*/
-/*-------------------------------------------------------------------------------------------------nav*/
+/*--------------------------------------end Header--------------------------------------------*/
+/*----------------------------------start search-bar-section-----------------------------------*/
 
-/*Background of the bar to make border*/
+/*Bar background to make border*/
 #allform {
   background-color: rgba(66, 66, 68, 0.2);
   width: fit-content;
   border-radius: 8px;
 }
 
-/*formatting the locate button*/
+/*formatting locate button*/
 #geoloc {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -49,7 +49,7 @@ body {
   width: 3em;
 }
 
-/*formatting the field*/
+/*formatting field*/
 #case {
   border: none;
   height: 2.8em;
@@ -58,7 +58,7 @@ body {
   margin-left: -5px; /*To have no space between blocks*/
 }
 
-/*formatting the submit button*/
+/*formatting submit button*/
 #bouton {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -68,10 +68,10 @@ body {
   font-weight: 800;
   border: none;
 }
-/*-----------------------------------------------------------------------------end nav*/
-/*--------------------------------------------------------------------------Filter nav*/
+/*--------------------------------------end nav---------------------------------------*/
+/*----------------------------------Filter nav----------------------------------------*/
 
-/*Use of Flex to get bloks online*/
+/*Use Flex to get bloks online*/
 .main-filter-box {
   width: 75%;
   background-color: cornsilk;
@@ -108,11 +108,11 @@ body {
 
 /*------------------------------------------------------------------------end Filter nav*/
 /*------------------------------------------------------------------------------section */
-
+/* --------------------------------start the result section--------------------------- */
 .result {
   background-color: #f2f2f2;
   width: 60%;
-  height: 600px;
+  height: 650px;
   border-radius: 30px;
 }
 
@@ -159,7 +159,7 @@ body {
   margin-left: 7px;
 }
 
-/* mise en forme u texte sous image */
+/* mise en forme du texte sous image */
 .subtitlepick {
   font-size: 0.5em;
   margin-left: 7px;
@@ -174,3 +174,135 @@ body {
 /* couleur des icônes étoiles fontawesome */
 #emptystar {
   color: #deebff;
+}
+/* ------------------------------------------------end the resultpick section-------------------------------------- */
+/* ------------------------------------------- resut & aside container for flex-------------------------------------- */
+.article-aside-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* ------------------------------------------- resut & aside container for flex-------------------------------------- */
+
+/*  */
+#aside_for_flex {
+  width: 35%;
+  height: 650px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+.aside-box {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: magenta;
+}
+.poppick {
+  display: flex;
+  background-color: lightsteelblue;
+  width: 85%;
+  height: 180px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+/* image des "pop" */
+.img_pop {
+  width: 50%;
+  height: 92%;
+  align-self: center;
+  margin: 3%;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+/* ----------------------------------------------end aside poppick--------------------------------------- */
+
+#activity-section {
+  background-color: rgb(214, 214, 233);
+}
+
+#activity_container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.activitypick {
+  width: 300px;
+  height: 90%;
+  background-color: rgb(250, 135, 212);
+  border-radius: 8%;
+}
+.twin-activity {
+  width: 300px;
+  height: 90%;
+  background-color: rgb(80, 73, 78);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-acttivity-vp {
+  margin-left: -100px;
+}
+
+.img-activity-border {
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
+}
+.twin-img-activity-border {``
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
+
+}
+
+.twin-activitypick {
+  width: 300px;
+  height: 45%;
+  background-color: lightskyblue;
+  align-items: center;
+  border-radius: 8%;
+}
+
+.img-acttivity-fp {
+}
+
+.img-twin-acttivity {
+  /* width: 95%;
+  height: 75%; */
+  /* align-self: center; */
+  /* margin-top: 3%;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%; */
+}
+.twin-activitypick-l {
+  width: 350px;
+  height: 55%;
+  border-radius: 8%;
+  background-color: lightskyblue;
+}
+.twin-activitypick-s {
+  width: 350px;
+  height: 35%;
+  border-radius: 8%;
+  background-color: lightskyblue;
+}
+/* -------------------------------------------------------start footer----------------------------------------------------- */
+
+.footer-nav {
+  background-color: #f2f2f2;
+  margin-top: 4%;
+  height: 250px;
+  display: flex;
+}
+.end_menu {
+  margin-top: 4%;
+  margin-right: 20%;
+}
