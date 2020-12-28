@@ -7,29 +7,51 @@
 }
 /*---------------------------------start header-----------------------------------------------------*/
 body {
-  background-color: lightpink;
-  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/*To make a page well centered*/
-#page-wrapper {
   width: 1440px;
-  background-color: khaki;
+  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+/*To make a well centered page*/
+#page-wrapper {
+  width: 1360px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
 }
-
 /*Use flex for header layout*/
-.container {
+header {
   display: flex;
   justify-content: space-between;
-  background-color: lawngreen;
 }
-
-/*maegin and no pint li*/
-.container li {
+/* Use flex for inline list */
+header ul {
+  display: flex;
+}
+/*margin and no point li*/
+li {
   margin-left: 3em;
   list-style: none;
+}
+/* nav element color  */
+#hebe,
+#ins {
+  color: #0065fc;
+}
+/* for the bolder nav font*/
+#ins {
+  font-weight: bold;
+}
+/* for the main title */
+h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 3em;
+}
+/* for the catchphrase */
+header h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 1.3em;
 }
 /*--------------------------------------end Header--------------------------------------------*/
 /*----------------------------------start search-bar-section-----------------------------------*/
@@ -38,45 +60,53 @@ body {
 #allform {
   background-color: rgba(66, 66, 68, 0.2);
   width: fit-content;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 /*formatting locate button*/
 #geoloc {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   height: 3em;
   width: 3em;
 }
 
 /*formatting field*/
 #case {
+  font-weight: bolder;
   border: none;
   height: 2.8em;
-  width: 15em;
+  width: 20em;
+
+  padding-left: 2em;
   margin-right: -5px; /*To have no space between blocks*/
   margin-left: -5px; /*To have no space between blocks*/
 }
 
 /*formatting submit button*/
 #bouton {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   height: 3em;
   background-color: #0065fc;
   color: white;
   font-weight: 800;
   border: none;
 }
+
 /*--------------------------------------end nav---------------------------------------*/
 /*----------------------------------Filter nav----------------------------------------*/
-
+/* make "filtres" in line */
+#filter {
+  padding-top: 0.8em;
+  font-weight: bolder;
+}
 /*Use Flex to get bloks online*/
 .main-filter-box {
   width: 75%;
-  background-color: cornsilk;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /*Use of Flex to get bloks online*/
@@ -90,7 +120,7 @@ body {
 
 /*Use of Flex to get bloks online*/
 .filter_box {
-  border: solid 0.2px;
+  border: solid 3px #f2f2f2;
   border-top-left-radius: 30px; /* follow the circle button */
   border-bottom-left-radius: 30px; /* follow the circle button */
   border-top-right-radius: 30px;
@@ -98,17 +128,28 @@ body {
   width: fit-content;
 }
 
-.filter_text {
-  /* span class to add text inline */
-  margin-right: 0.5em;
-  font-size: 1.2em;
-  font-weight: bold;
-  font-size: 0.5em;
+.filter_box:hover {
+  background-color: #0065fc;
 }
 
+.filter_text {
+  /* span class to add text inline */
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.fas {
+  color: #0065fc;
+  font-size: 1.5em;
+}
 /*------------------------------------------------------------------------end Filter nav*/
 /*------------------------------------------------------------------------------section */
 /* --------------------------------start the result section--------------------------- */
+
+h4 {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
 .result {
   background-color: #f2f2f2;
   width: 60%;
@@ -116,30 +157,42 @@ body {
   border-radius: 30px;
 }
 
+article h2,
+aside h2,
+section h2 {
+  font-weight: bolder;
+  padding-left: 1em;
+  padding-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+#activity-section-title {
+  padding-left: 0;
+}
+
 .resultpickbox {
-  width: 95%;
-  height: 550px;
-  background-color: lightskyblue;
+  width: 100%;
+  height: 75%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  /* align-content: space-around;
-   */
+  /* align-items: center; */
+  /* align-content: space-around; */
 }
 
 .pickbox {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 250px;
-  background-color: lightslategrey;
+  width: 30%;
+  height: 40%;
+  background-color: white;
   border-radius: 8%;
+  box-shadow: 5px 10px 5px lightgrey;
 }
 
 .img_result {
   width: 95%;
-  height: 50%;
+  height: 60%;
   align-self: center;
   margin-top: 3%;
   border-top-right-radius: 8%;
@@ -149,24 +202,30 @@ body {
 /* pour avoir un conteneur des informations l'image */
 .description_contener {
   width: 95%;
-  height: 95%;
-  align-self: center;
+  height: 40%;
+  margin-left: 1em;
+  /* align-self: center; */
+}
+.fa-star {
+  font-size: 0.7em;
 }
 
 /* mise en forme du texte sous image */
 .titlepick {
-  font-size: 0.8em;
-  margin-left: 7px;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+  margin-bottom: 0em;
+  margin-left: 0em;
 }
 
 /* mise en forme du texte sous image */
 .subtitlepick {
-  font-size: 0.5em;
-  margin-left: 7px;
+  font-size: 0.8em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 /* couleur des icônes étoiles fontawesome */
-.fas,
 .fa-star {
   color: #0065fc;
 }
@@ -176,6 +235,12 @@ body {
   color: #deebff;
 }
 /* ------------------------------------------------end the resultpick section-------------------------------------- */
+
+h4 {
+  padding-left: 1em;
+  margin-top: 0;
+}
+
 /* ------------------------------------------- resut & aside container for flex-------------------------------------- */
 .article-aside-container {
   display: flex;
@@ -184,8 +249,11 @@ body {
 /* ------------------------------------------- resut & aside container for flex-------------------------------------- */
 
 /*  */
+.fa-chart-line {
+  margin-left: 4em;
+}
 #aside_for_flex {
-  width: 35%;
+  width: 37%;
   height: 650px;
   background-color: #f2f2f2;
   border-radius: 30px;
@@ -195,114 +263,123 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: magenta;
 }
 .poppick {
   display: flex;
-  background-color: lightsteelblue;
-  width: 85%;
-  height: 180px;
+  background-color: white;
+  width: 80%;
+  height: 28%;
   margin: auto;
-  border-radius: 8px;
+  border-radius: 30px;
+  box-shadow: 5px 10px 5px lightgrey;
 }
-
 /* image des "pop" */
 .img_pop {
-  width: 50%;
-  height: 92%;
+  width: 30%;
+  /* height: 80%; */
+  /* align-self: center; */
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-top: 2%;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.description_contener_pop {
+  width: 40%;
+  margin-left: 1em;
   align-self: center;
-  margin: 3%;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
 }
 /* ----------------------------------------------end aside poppick--------------------------------------- */
 
-#activity-section {
-  background-color: rgb(214, 214, 233);
-}
+/* ---------------------------------------------start activity section-----------------------------------*/
 
 #activity_container {
   width: 100%;
-  height: 600px;
+  height: 550px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .activitypick {
-  width: 300px;
+  width: 22%;
   height: 90%;
-  background-color: rgb(250, 135, 212);
-  border-radius: 8%;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 5px 10px 5px #f2f2f2;
+}
+
+.img-acttivity {
+  width: 100%;
+  height: 90%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .twin-activity {
-  width: 300px;
+  width: 22%;
   height: 90%;
-  background-color: rgb(80, 73, 78);
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.img-acttivity-vp {
-  margin-left: -100px;
-}
-
-.img-activity-border {
-  width: 100%;
-  height: 85%;
-  overflow: hidden;
-  border-top-right-radius: 8%;
-  border-top-left-radius: 8%;
-}
-.twin-img-activity-border {``
-  width: 100%;
-  height: 85%;
-  overflow: hidden;
-  border-top-right-radius: 8%;
-  border-top-left-radius: 8%;
-
-}
-
 .twin-activitypick {
-  width: 300px;
+  width: 100%;
   height: 45%;
-  background-color: lightskyblue;
+  background-color: white;
   align-items: center;
-  border-radius: 8%;
-}
-
-.img-acttivity-fp {
+  border-radius: 30px;
 }
 
 .img-twin-acttivity {
-  /* width: 95%;
-  height: 75%; */
-  /* align-self: center; */
-  /* margin-top: 3%;
-  border-top-right-radius: 8%;
-  border-top-left-radius: 8%; */
+  width: 100%;
+  height: 85%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
+.img-twin-acttivity-s {
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
 .twin-activitypick-l {
-  width: 350px;
+  width: 100%;
   height: 55%;
-  border-radius: 8%;
-  background-color: lightskyblue;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 10px 5px #f2f2f2;
 }
 .twin-activitypick-s {
-  width: 350px;
+  width: 100%;
   height: 35%;
-  border-radius: 8%;
-  background-color: lightskyblue;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 10px 5px #f2f2f2;
 }
 /* -------------------------------------------------------start footer----------------------------------------------------- */
 
 .footer-nav {
   background-color: #f2f2f2;
-  margin-top: 4%;
+  width: 100%;
   height: 250px;
   display: flex;
+  justify-content: start;
 }
+footer h2 {
+  font-size: 1em;
+}
+
 .end_menu {
-  margin-top: 4%;
-  margin-right: 20%;
+  margin-top: 1em;
+  margin-right: 8em;
+}
+
+footer ul {
+  list-style: none;
+}
+footer li {
+  margin: 0;
 }
