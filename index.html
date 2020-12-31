@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!--------------------------------------------------------------head------------------------------------------------------>
+    <!-- ------------------------------------------------------------head---------------------------------------------------- -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <!--to link with the css stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- to link to responsive css stylesheet  -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1280px)"
+      href="petite_resolution.css"
+    />
+    <!--to link with Fontawesome-->
     <script
       src="https://kit.fontawesome.com/2db2f9c310.js"
       crossorigin="anonymous"
     ></script>
-    <!--to link with Fontawesome-->
     <title>Reservia</title>
   </head>
-  <!--------------------------------------------------------------head------------------------------------------------------>
-  <!--------------------------------------------------------------body------------------------------------------------------>
+  <!-- ------------------------------------------------------------head------------------------------------------------  -->
+  <!--  ----------------------------------------------------------body-------------------------------------------------  -->
   <body>
     <div id="page-wrapper">
       <!--to wrap up the full page -->
-      <!------------------------------------------------------start header------------------------------------------------->
-      <div id="header-wrapper">
-        <header>
-          <!--block for Flex-->
-          <div>
-            <img id="logo" src="images/logo/Reservia.svg" alt="logo_Reservia" />
-            <h1>Trouvez votre hébérgement pour des vacances de rêves</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
+      <!--  --------------------------------------------------start header---------------------------------------------  -->
+
+      <header>
+        <div id="logodiv">
+          <img id="logo" src="images/logo/Reservia.svg" alt="logo_Reservia" />
+        </div>
+
+        <nav id="upnav">
+          <div id="hebe">
+            <p class="headnav">Hébérgements</p>
           </div>
-          <!--nav inside header-->
-          <nav>
-            <ul>
-              <li id="hebe">Hébérgements</li>
-              <li>Activités</li>
-              <li id="ins">S'inscrire</li>
-            </ul>
-          </nav>
-        </header>
-      </div>
+          <div id="acti">
+            <p class="hdnav">Activités</p>
+          </div>
+        </nav>
+
+        <p id="ins">S'inscrire</p>
+      </header>
+      <section>
+        <h1>Trouvez votre hébérgement pour des vacances de rêves</h1>
+        <h2 id="testh2">En plein centre ville ou en pleine nature</h2>
+      </section>
+
       <!---------------------------------------------------end header--------------------------------------------------->
       <!---------------------------------------------------start search section---------------------------------------------------->
       <!--Search and location bar--------------------------------------->
@@ -51,6 +61,7 @@
             id="case"
           />
           <input type="submit" value="Rechercher" id="bouton" />
+          <button id="bouton-small"><i class="fas fa-search"></i></button>
         </form>
       </section>
       <!---------------------------------------------------end search section------------------------------------------------------>
@@ -98,7 +109,7 @@
       </section>
       <!--------------------------end section & filter box 1,2,3,4--------------------------------->
       <!-------------------------------result & aside container section---------------------------------------------------->
-      <section>
+      <section id="sectionflex">
         <h4>
           <i class="fas fa-info-circle"></i> Plus de 500 logements sont
           disponibles dans cette ville

@@ -5,33 +5,51 @@
   font-family: "Ralewayitalic";
   src: url("font/Raleway-Italic-VariableFont_wght.ttf");
 }
-/*---------------------------------start header-----------------------------------------------------*/
+/*---------------------------------for all page-----------------------------------------------------*/
 body {
-  width: 1440px;
   font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 10px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0;
 }
 /*To make a well centered page*/
 #page-wrapper {
-  width: 1360px;
-  margin-top: 50px;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
-/*Use flex for header layout*/
+/*---------------------------------start header-----------------------------------------------------*/
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-/* Use flex for inline list */
-header ul {
+#logodiv {
+  flex-basis: 40%;
+}
+img#logo {
+  width: 120px;
+}
+#hebe {
+  height: 100%;
+  min-width: 175px;
+  /* text-align: center; */
+  border-top: blue 3px solid;
+}
+
+#acti {
+  height: 100%;
+  min-width: 125px;
+  text-align: center;
+  border-top: lightgray 3px solid;
+}
+
+#upnav {
   display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
 }
-/*margin and no point li*/
-li {
-  margin-left: 3em;
-  list-style: none;
-}
+/* ------------------------------------------ */
 /* nav element color  */
 #hebe,
 #ins {
@@ -48,21 +66,19 @@ h1 {
   margin-top: 3em;
 }
 /* for the catchphrase */
-header h2 {
+#testh2 {
   font-size: 1em;
   font-weight: lighter;
   margin-bottom: 1.3em;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
 }
 /*--------------------------------------end Header--------------------------------------------*/
 /*----------------------------------start search-bar-section-----------------------------------*/
-
-/*Bar background to make border*/
 #allform {
-  background-color: rgba(66, 66, 68, 0.2);
-  width: fit-content;
-  border-radius: 15px;
+  display: flex;
 }
-
 /*formatting locate button*/
 #geoloc {
   border: none;
@@ -75,13 +91,10 @@ header h2 {
 /*formatting field*/
 #case {
   font-weight: bolder;
-  border: none;
-  height: 2.8em;
+  border: solid 1px lightgray;
+  height: 3em;
   width: 20em;
-
   padding-left: 2em;
-  margin-right: -5px; /*To have no space between blocks*/
-  margin-left: -5px; /*To have no space between blocks*/
 }
 
 /*formatting submit button*/
@@ -93,6 +106,9 @@ header h2 {
   color: white;
   font-weight: 800;
   border: none;
+}
+#bouton-small {
+  display: none;
 }
 
 /*--------------------------------------end nav---------------------------------------*/
@@ -106,6 +122,7 @@ header h2 {
 .main-filter-box {
   width: 75%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -138,13 +155,20 @@ header h2 {
   font-weight: bold;
   font-size: 1em;
 }
-.fas {
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
   color: #0065fc;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 /*------------------------------------------------------------------------end Filter nav*/
 /*------------------------------------------------------------------------------section */
 /* --------------------------------start the result section--------------------------- */
+.fa-info-circle {
+  font-size: 2em;
+  color: lightgray;
+}
 
 h4 {
   font-size: 0.8em;
@@ -152,7 +176,7 @@ h4 {
 }
 .result {
   background-color: #f2f2f2;
-  width: 60%;
+  width: 700px;
   height: 650px;
   border-radius: 30px;
 }
@@ -244,6 +268,7 @@ h4 {
 /* ------------------------------------------- resut & aside container for flex-------------------------------------- */
 .article-aside-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 /* ------------------------------------------- resut & aside container for flex-------------------------------------- */
@@ -253,7 +278,7 @@ h4 {
   margin-left: 4em;
 }
 #aside_for_flex {
-  width: 37%;
+  width: 370px;
   height: 650px;
   background-color: #f2f2f2;
   border-radius: 30px;

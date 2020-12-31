@@ -1,0 +1,51 @@
+@media screen and (max-width: 650px) {
+  #upnav {
+    order: 1;
+    flex-basis: 100%;
+  }
+  #hebe {
+    border-top: none;
+    border-bottom: solid 3px blue;
+  }
+  #acti {
+    border-top: none;
+    border-bottom: solid 3px lightgray;
+  }
+  /* -------end header responsive----------- */
+  /* ------start search section resposive---- */
+  #case {
+    width: 15em;
+  }
+
+  #bouton {
+    display: none;
+  }
+
+  #bouton-small {
+    display: initial;
+    border-radius: 10px;
+    height: 3em;
+    width: 4em;
+    background-color: #0065fc;
+    color: white;
+    margin-left: -5px;
+    border: none;
+  }
+  /* ------end search section resposive---- */
+  /* ------start filtersection resposive---- */
+
+  #filter {
+    flex-basis: 100%;
+  }
+
+  .main-filter-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* ------end filtersection resposive---- */
+  /* ------start result aside section---- */
+}
+
+/* visibility hidden 
+content after */
