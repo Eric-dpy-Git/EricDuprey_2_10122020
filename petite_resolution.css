@@ -45,6 +45,15 @@
   }
   /* ------end filtersection resposive---- */
   /* ------start result aside section---- */
+
+  .pickbox {
+    width: 350px;
+    height: 220px;
+  }
+  /* to make the fa stay inline */
+  .fa-chart-line {
+    margin-left: 3em;
+  }
 }
 
 /* visibility hidden 
