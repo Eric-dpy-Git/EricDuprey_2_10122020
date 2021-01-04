@@ -60,14 +60,34 @@
     height: 220px;
   }
   /* to make the fa stay inline */
-  .fa-chart-line {
-    margin-left: 3em;
-  }
+  /* .fa-chart-line {
+    margin-left: 4em;
+  } */
 }
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
   body {
     max-width: 768px;
+  }
+
+  #logodiv {
+    flex-basis: 30%;
+  }
+
+  #acti {
+    margin-left: 5em;
+  }
+
+  .main-filter-box {
+    width: 100%;
+  }
+
+  .filter_text {
+    font-size: 0.8em;
+  }
+
+  .fa-chart-line {
+    margin-left: 25em;
   }
 
   #aside_for_flex {
@@ -90,6 +110,9 @@
   .titlepick,
   .subtitlepick {
     font-size: 80%;
+  }
+  .end_menu {
+    margin: 0;
   }
 }
 
