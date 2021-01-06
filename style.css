@@ -15,24 +15,31 @@
 body {
   font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
   width: 1360px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 }
 /* well centered page*/
 #page-wrapper {
-  width: 95%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0;
 }
 /*  style titles */
 article h2,
 aside h2,
 section h2 {
-  font-weight: bolder;
-  padding-left: 1em;
-  padding-top: 1.5em;
-  margin-bottom: 1em;
+  font-family: Rsbold;
   font-size: 1.3em;
+  margin: 2em 0 0 1em;
+  padding: 0;
+}
+/* no color & underline links */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
 }
 /*----------start header styles-----------------------*/
 /* three blocks in header */
@@ -58,28 +65,34 @@ img#logo {
 /* To make a blue border at the top of "hébergement" */
 #hebe {
   border-top: blue 3px solid;
+  padding-top: 1em;
 }
+
 /* To put "Activités" to the right and aligned  */
 #acti {
   text-align: right;
   border-top: white 3px solid;
+  padding-top: 1em;
 }
 /* for the bolder nav font an border top align*/
 #ins {
   border-top: 3px solid white;
-  font-weight: bold;
+  font-family: Rsbold;
 }
 /* nav elements color  */
-#hebe,
+#hebe-color,
 #ins {
   color: #0065fc;
+}
+#acti-color {
+  color: black;
 }
 /* --------------end header styles----------------------- */
 /* --------------start title styles----------------------- */
 /* for style the main title */
 h1 {
   font-size: 1.3em;
-  font-weight: bold;
+  font-family: Rsbold;
   margin-top: 2em;
 }
 /* for the catchphrase */
@@ -191,13 +204,13 @@ h4 {
 }
 /* title inline */
 #activity-section-title {
-  padding-left: 0;
+  padding: 0;
 }
 /* --------- flex resut & aside container------------- */
 .article-aside-container {
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 /* -----------start result box style---------- */
 /* main result box */
@@ -206,8 +219,8 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 850px;
-  min-width: 300px;
+  max-width: 900px;
+  min-width: 310px;
   min-height: 650px;
   border-radius: 30px;
   margin: 0 0 1em 0;
@@ -222,15 +235,11 @@ h4 {
   align-items: center;
   align-content: space-between;
 }
-#transform-pick-1:hover,
-#transform-pick-2:hover {
+.transform-pick-1:hover,
+.transform-pick-2:hover {
   transform: scale(1.1);
   transition: 500ms;
 }
-/* .transform-pick-2:hover {
-  transform: scale(1.1);
-  transition: 500ms;
-} */
 /* pick box x 6 */
 .pickbox {
   display: flex;
@@ -277,13 +286,14 @@ h4 {
   color: #0065fc;
 }
 /* to make empty stars */
-#emptystar {
-  color: #deebff;
+.e {
+  color: #cfcdcd;
 }
 /* style "Afficher plus" */
 #showmore {
-  margin: 0 0 1em 0;
+  margin: 0 0 2em 0;
   padding: 0 0 0 2em;
+  font-family: Rsbold;
   font-weight: 500;
   font-size: 1em;
 }
@@ -291,11 +301,11 @@ h4 {
 /* ------------------start aside ---------------------- */
 /* icon at the right of title */
 .fa-chart-line {
-  margin-left: 4em;
+  margin-left: 3em;
 }
 /* to flexbox with article the aside part */
 #aside_for_flex {
-  min-width: 330px;
+  min-width: 320px;
   height: 650px;
   background-color: #f2f2f2;
   border-radius: 30px;
@@ -303,7 +313,7 @@ h4 {
 }
 /* to flex inside the aside box */
 .aside-box {
-  min-width: 320px;
+  min-width: 330px;
   height: 85%;
   display: flex;
   flex-direction: column;
@@ -335,9 +345,17 @@ h4 {
 /* -----------------------end aside --------------------------- */
 
 /* -------------------start activity section----------------------*/
+#activity-section {
+  margin: 0 auto;
+}
+#activity-section-title {
+  margin: 1em;
+  padding: 0;
+}
 /* main flex activity container */
 #activity_container {
   max-width: 1300px;
+  min-width: 320px;
   min-height: 450px;
   display: flex;
   flex-wrap: wrap;
@@ -347,7 +365,7 @@ h4 {
 }
 /* box for activity pick */
 .activitypick {
-  width: 300px;
+  width: 310px;
   height: 400px;
   border-radius: 30px;
   box-shadow: 5px 10px 5px #f2f2f2;
@@ -372,14 +390,14 @@ h4 {
 /* style large boxes for twin */
 .twin-activitypick-l {
   width: 100%;
-  height: 55%;
+  height: 220px;
   border-radius: 30px;
   box-shadow: 5px 10px 5px #f2f2f2;
 }
 /* style small boxes for twin */
 .twin-activitypick-s {
   width: 100%;
-  height: 35%;
+  height: 150px;
   border-radius: 30px;
   box-shadow: 5px 10px 5px #f2f2f2;
 }
@@ -409,13 +427,15 @@ h4 {
 /* flex box for footer */
 .footer-nav {
   background-color: #f2f2f2;
-  width: 100%;
+  max-width: 1360px;
+  min-width: 330px;
   min-height: 250px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   /* justify-content: start; */
 }
-/* font size */
+/* font size & weight */
 footer li {
   font-size: 1em;
 }

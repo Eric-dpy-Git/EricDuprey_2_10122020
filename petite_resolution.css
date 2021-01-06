@@ -1,6 +1,12 @@
 @media screen and (max-width: 425px) {
+  /*  transitions for responsive find on : https://www.youtube.com/watch?v=d3eXakVNtuo */
+  * {
+    transition: all 1500ms ease;
+  }
+  /*  */
   body {
-    width: auto;
+    width: 320px;
+    margin: 0 auto;
   }
   #upnav {
     order: 1;
@@ -17,7 +23,12 @@
     border-bottom: solid 3px lightgray;
   }
   /* -------end header responsive----------- */
-  /* ------start search section resposive---- */
+  /* ------start search section responsive---- */
+
+  #allform {
+    margin: 0 0 0 2em;
+  }
+
   #case {
     width: 15em;
   }
@@ -35,6 +46,9 @@
     color: white;
     margin-left: -8px;
     border: none;
+  }
+  #hebe-anchor {
+    font-size: 0.7em;
   }
   /* ------end search section resposive---- */
   /* ------start filtersection resposive---- */
@@ -55,19 +69,35 @@
   /* ------end filtersection resposive---- */
   /* ------start result aside section---- */
 
+  .result {
+    width: 330px;
+  }
   .pickbox {
-    width: 350px;
+    width: 300px;
     height: 220px;
   }
+  .aside-box {
+    width: 320px;
+  }
+  #pop-title {
+    margin-bottom: 1em;
+  }
+  .poppick {
+    margin: 0;
+  }
+
   /* to make the fa stay inline */
-  /* .fa-chart-line {
-    margin-left: 4em;
-  } */
+  .fa-chart-line {
+    margin-left: 3em;
+  }
 }
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
+  * {
+    transition: all 1500ms ease;
+  }
   body {
-    max-width: 768px;
+    max-width: 750px;
   }
 
   #logodiv {
@@ -87,11 +117,11 @@
   }
 
   .fa-chart-line {
-    margin-left: 25em;
+    margin-left: 22em;
   }
 
   #aside_for_flex {
-    min-width: 768px;
+    min-width: 650px;
     height: 300px;
     background-color: #f2f2f2;
     border-radius: 30px;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- ------------------------------------------------------------head---------------------------------------------------- -->
+    <!-- head -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--to link with the css stylesheet-->
@@ -19,41 +19,38 @@
     ></script>
     <title>Reservia</title>
   </head>
-  <!-- ------------------------------------------------------------head------------------------------------------------  -->
-  <!--  ----------------------------------------------------------body-------------------------------------------------  -->
+  <!-- end head -->
+  <!--  body  -->
   <body>
     <div id="page-wrapper">
-      <!--to wrap up the full page -->
-      <!--  --------------------------------------------------start header---------------------------------------------  -->
-
+      <!-- div to wrap up the full page -->
+      <!--  start 3 part header -->
       <header>
         <div id="logodiv">
           <img id="logo" src="images/logo/Reservia.svg" alt="logo_Reservia" />
         </div>
-
         <nav id="upnav">
           <div id="hebe">
-            <p class="headnav">Hébérgements</p>
+            <a href="#hebe-anchor" id="hebe-color" class="headnav"
+              >Hébérgements</a
+            >
           </div>
           <div id="acti">
-            <p class="hdnav">Activités</p>
+            <a href="#activity-section-title" id="acti-color" class="hdnav"
+              >Activités</a
+            >
           </div>
         </nav>
-
         <p id="ins">S'inscrire</p>
       </header>
+      <!--  end header -->
+      <!-- title section -->
       <section>
         <h1>Trouvez votre hébérgement pour des vacances de rêves</h1>
         <h2 id="catchphrase">En plein centre ville ou en pleine nature</h2>
-      </section>
-
-      <!---------------------------------------------------end header--------------------------------------------------->
-      <!---------------------------------------------------start search section---------------------------------------------------->
-      <!--Search and location bar--------------------------------------->
-      <section>
         <form id="allform" action="#">
           <button id="geoloc"><i class="fas fa-map-marker-alt"></i></button
-          ><!--Integration of the fontawesome icon-->
+          ><!-- Integration of the fontawesome icon -->
           <input
             type="search"
             name="Recherche"
@@ -64,23 +61,21 @@
           <button id="bouton-small"><i class="fas fa-search"></i></button>
         </form>
       </section>
-      <!---------------------------------------------------end search section------------------------------------------------------>
-      <!---------------------------------------------------start filter section---------------------------------------------------->
+      <!-- end search section -->
+      <!-- start filter section -->
       <section class="main-filter-box">
-        <!--cannot line up with filters boxes-->
         <h3 id="filter">Filtres</h3>
         <div>
-          <!--------------------------start filter box---------------------------1-->
+          <!-- tart filter box 1 -->
           <p class="filter_box">
             <button class="button_form">
-              <i class="fas fa-money-bill-wave"></i
-              ><!--Integration of the fontawesome icon-->
+              <i class="fas fa-money-bill-wave"></i>
             </button>
             <span class="filter_text">Économique</span>
           </p>
         </div>
         <div>
-          <!--------------------------start filter box--------------------------2-->
+          <!-- start filter box 2 -->
           <p class="filter_box">
             <button class="button_form">
               <i class="fas fa-child"></i>
@@ -89,7 +84,7 @@
           </p>
         </div>
         <div>
-          <!--------------------------start filter box--------------------------3-->
+          <!-- start filter box 3 -->
           <p class="filter_box">
             <button class="button_form">
               <i class="fas fa-heart"></i>
@@ -98,7 +93,7 @@
           </p>
         </div>
         <div>
-          <!--------------------------start filter box--------------------------4-->
+          <!-- start filter box 4 -->
           <p class="filter_box">
             <button class="button_form">
               <i class="fas fa-dog"></i>
@@ -107,22 +102,22 @@
           </p>
         </div>
       </section>
-      <!--------------------------end section & filter box 1,2,3,4--------------------------------->
-      <!-----------------------------start result & aside container section---------------------------------------------------->
+      <!-- end section & filter box 1,2,3,4 -->
+      <!-- start result & aside container section -->
       <section id="sectionflex">
-        <h4>
+        <h4 id="hebe-anchor">
           <i class="fas fa-info-circle"></i> Plus de 500 logements sont
           disponibles dans cette ville
         </h4>
         <div class="article-aside-container">
-          <!------------------------------------start article------------------------------------------->
+          <!-- start article -->
           <article class="result">
             <h2>Hébergements à Marseille</h2>
-            <!---------------------box for flex 6 pickbox------------------------------------->
+            <!-- box for flex 6 pickbox -->
             <div class="resultpickbox">
-              <!--------------------------------Start Pickbox X6-----------------------------------1--->
-              <a id="transform-pick-1" href="#"
-                ><div class="pickbox">
+              <!-- Start Pickbox 1 -->
+              <a class="transform-pick-1" href="#">
+                <div class="pickbox">
                   <img
                     class="img_result"
                     src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -135,12 +130,12 @@
                     </p>
                     <i class="fas fa-star"></i><i class="fas fa-star"></i
                     ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i id="emptystar" class="fas fa-star"></i>
+                    ><i class="e fas fa-star"></i>
                   </div></div
               ></a>
-              <!--------------------------------Start Pickbox X6-----------------------------------2--->
-              <a id="transform-pick-2" href="#"
-                ><div class="pickbox">
+              <!-- Start Pickbox 2  -->
+              <a class="transform-pick-2" href="#">
+                <div class="pickbox">
                   <img
                     class="img_result"
                     src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -157,220 +152,246 @@
                   </div>
                 </div>
               </a>
-              <!--------------------------------Start Pickbox X6-----------------------------------3--->
-              <div class="pickbox">
-                <img
-                  class="img_result"
-                  src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                  alt="Hôtel des mouettes"
-                />
-                <div class="description_contener">
-                  <h5 class="titlepick">Hôtel des mouettes</h5>
-                  <p class="subtitlepick">Nuit à partir de<span> 76€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i id="emptystar" class="fas fa-star"></i>
+              <!-- Start Pickbox 3 -->
+              <a class="transform-pick-2" href="#">
+                <div class="pickbox">
+                  <img
+                    class="img_result"
+                    src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt="Hôtel des mouettes"
+                  />
+                  <div class="description_contener">
+                    <h5 class="titlepick">Hôtel des mouettes</h5>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 76€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="e fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
-              <!--------------------------------Start Pickbox X6-----------------------------------4--->
-              <div class="pickbox">
-                <img
-                  class="img_result"
-                  src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                  alt="Hôtel de la mer"
-                />
-                <div class="description_contener">
-                  <h5 class="titlepick">Hôtel de la mer</h5>
-                  <p class="subtitlepick">Nuit à partir de<span> 46€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i
-                  ><i id="emptystar" class="fas fa-star"></i
-                  ><i id="emptystar" class="fas fa-star"></i>
+              </a>
+              <!-- Start Pickbox 4 -->
+              <a class="transform-pick-2" href="#">
+                <div class="pickbox">
+                  <img
+                    class="img_result"
+                    src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    alt="Hôtel de la mer"
+                  />
+                  <div class="description_contener">
+                    <h5 class="titlepick">Hôtel de la mer</h5>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 46€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="e fas fa-star"></i
+                    ><i class="e fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
-              <!--------------------------------Start Pickbox X6-----------------------------------5--->
-              <div class="pickbox">
-                <img
-                  class="img_result"
-                  src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                  alt="Auberge Le Panier"
-                />
-                <div class="description_contener">
-                  <h5 class="titlepick">Auberge Le Panier</h5>
-                  <p class="subtitlepick">Nuit à partir de<span> 23€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i id="emptystar" class="fas fa-star"></i>
+              </a>
+              <!-- Start Pickbox 5 -->
+              <a class="transform-pick-2" href="#">
+                <div class="pickbox">
+                  <img
+                    class="img_result"
+                    src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    alt="Auberge Le Panier"
+                  />
+                  <div class="description_contener">
+                    <h5 class="titlepick">Auberge Le Panier</h5>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 23€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="e fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
-              <!--------------------------------Start Pickbox X6-----------------------------------6--->
-              <div class="pickbox">
-                <img
-                  class="img_result"
-                  src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                  alt="Hôtel chez Amina"
-                />
-                <div class="description_contener">
-                  <h5 class="titlepick">Hôtel chez Amina</h5>
-                  <p class="subtitlepick">Nuit à partir de<span> 96€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
+              </a>
+              <!-- Start Pickbox 6 -->
+              <a class="transform-pick-2" href="#">
+                <div class="pickbox">
+                  <img
+                    class="img_result"
+                    src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    alt="Hôtel chez Amina"
+                  />
+                  <div class="description_contener">
+                    <h5 class="titlepick">Hôtel chez Amina</h5>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 96€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
+
+            <!-- "Afficher plus" with id for font familly -->
             <h4 id="showmore">Afficher plus</h4>
-            <!--------------------------------end pickbox X6 ------------------------------------------->
+            <!-- end pickbox X6  -->
           </article>
-          <!--------------------------------------end article------------------------------------------->
-          <!--------------------------------------start aside pop------------------------------------------->
+          <!-- end article -->
+          <!-- start aside pop -->
           <aside id="aside_for_flex">
-            <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
+            <h2 id="pop-title">
+              Les plus populaires<i class="fas fa-chart-line"></i>
+            </h2>
             <div class="aside-box">
-              <!----------------------------------start 3 aside pop------------------------------------------->
-              <!----------------------------------start aside pop x 1-------------------------------------------1------>
-              <div class="poppick">
-                <img
-                  class="img_pop"
-                  src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="Hôtel Le soleil du matin"
-                />
-                <div class="description_contener_pop">
-                  <h3 class="titlepick">Hôtel le soleil du matin</h3>
-                  <p class="subtitlepick">Nuit à partir de<span> 128€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
+              <!-- tart 3 aside pop -->
+              <!-- aside pop 1 -->
+              <a class="transform-pick-2" href="#">
+                <div class="poppick">
+                  <img
+                    class="img_pop"
+                    src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    alt="Hôtel Le soleil du matin"
+                  />
+                  <div class="description_contener_pop">
+                    <h3 class="titlepick">Hôtel le soleil du matin</h3>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 128€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
-              <!----------------------------------end aside pop x 1------------------------------------1------>
-              <!---------------------------------start aside pop x 2----------------------------------2------>
-              <div class="poppick">
-                <img
-                  class="img_pop"
-                  src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                  alt="Au coeur de l'eau Chambre d'hôtes"
-                />
-                <div class="description_contener_pop">
-                  <h3 class="titlepick">Au coeur de l'eau Chambre d'hôtes</h3>
-                  <p class="subtitlepick">Nuit à partir de<span> 71€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star" id="emptystar"></i>
+              </a>
+              <!-- aside pop 2 -->
+              <a class="transform-pick-2" href="#">
+                <div class="poppick">
+                  <img
+                    class="img_pop"
+                    src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="Au coeur de l'eau Chambre d'hôtes"
+                  />
+                  <div class="description_contener_pop">
+                    <h3 class="titlepick">Au coeur de l'eau Chambre d'hôtes</h3>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 71€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="e fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
-              <!---------------------------------- end aside pop x 2--------------------------------2------>
-              <!------------------------------start aside pop x 3----------------------------------3------>
-              <div class="poppick">
-                <img
-                  class="img_pop"
-                  src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                  alt="Hôtel tout bleu et blanc"
-                />
-                <div class="description_contener_pop">
-                  <h3 class="titlepick">Hôtel tout bleu et blanc</h3>
-                  <p class="subtitlepick">Nuit à partir de<span> 68€</span></p>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star" id="emptystar"></i>
+              </a>
+              <!-- aside pop 3 -->
+              <a class="transform-pick-2" href="#">
+                <div class="poppick">
+                  <img
+                    class="img_pop"
+                    src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    alt="Hôtel tout bleu et blanc"
+                  />
+                  <div class="description_contener_pop">
+                    <h3 class="titlepick">Hôtel tout bleu et blanc</h3>
+                    <p class="subtitlepick">
+                      Nuit à partir de<span> 68€</span>
+                    </p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="e fas fa-star"></i>
+                  </div>
                 </div>
-              </div>
-              <!--------------------------------end aside pop x 3----------------------------------3------>
+              </a>
+              <!-- end aside pop-->
             </div>
           </aside>
-          <!--------------------------------------end aside------------------------------------------->
+          <!-- end aside -->
         </div>
-        <!--------------------------------------end article aside section container------------------------------------------->
+        <!-- end article aside section container -->
       </section>
-      <!--------------------------------------start activity section ------------------------------------------->
+      <!-- start activity section  -->
       <section id="activity-section">
         <h2 id="activity-section-title">Activités à Marseille</h2>
-        <!--------------------------------------start activity article X6 ------------------------------------------->
+        <!-- start activity article X6  -->
         <article id="activity_container">
-          <!---------------------------start 1 activity article --------------------------------1--->
-          <div class="activitypick">
-            <img
-              class="img-activity"
-              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="Vieux port"
-            />
-
-            <!-- <div class="description_contener"> -->
-            <h3 class="activity-titlepick">Vieux port</h3>
-            <!-- </div> -->
-          </div>
-          <!---------------------------end 1 activity article --------------------------------1--->
-          <!---------------------------start 2&3 twin-activity article -------------------------------2&3--->
+          <!-- start 1 activity article  -->
+          <a class="transform-pick-2" href="#">
+            <div class="activitypick">
+              <img
+                class="img-activity"
+                src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Vieux port"
+              />
+              <h3 class="activity-titlepick">Vieux port</h3>
+            </div>
+          </a>
+          <!-- end 1 activity article -->
+          <!-- start 2&3 twin-activity article  -->
           <div class="twin-activity">
-            <div class="twin-activitypick-l">
-              <img
-                class="img-twin-acttivity-l"
-                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Fort de Pomègue"
-              />
-
-              <!-- <div class="description_contener"> -->
-              <h3 class="activity-titlepick">Fort de Pomègue</h3>
-              <!-- </div> -->
-            </div>
-            <div class="twin-activitypick-s">
-              <img
-                class="img-twin-acttivity-s"
-                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt="Îles du fioul"
-              />
-              <!-- <div class="description_contener"> -->
-              <h3 class="activity-titlepick">Îles du fioul</h3>
-              <!-- </div> -->
-            </div>
+            <a class="transform-pick-2" href="#">
+              <div class="twin-activitypick-l">
+                <img
+                  class="img-twin-acttivity-l"
+                  src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  alt="Fort de Pomègue"
+                />
+                <h3 class="activity-titlepick">Fort de Pomègue</h3>
+              </div>
+            </a>
+            <a class="transform-pick-2" href="#">
+              <div class="twin-activitypick-s">
+                <img
+                  class="img-twin-acttivity-s"
+                  src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  alt="Îles du fioul"
+                />
+                <h3 class="activity-titlepick">Îles du fioul</h3>
+              </div>
+            </a>
           </div>
-          <!---------------------------end 2&3 twin-activity article ------------------------------2&3--->
-
-          <!---------------------------start 4 activity article --------------------------------4--->
-          <div class="activitypick">
-            <img
-              class="img-activity"
-              src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Parc Natinal des Calanques"
-            />
-            <!-- <div class="description_contener"> -->
-            <h3 class="activity-titlepick">Parc National des Calanques</h3>
-            <!-- </div> -->
-          </div>
-          <!--------------------------------end 4 activity article --------------------------------4--->
-          <!---------------------------start 5&6 twin-activity article ------------------------------4&6--->
+          <!-- end 2&3 twin-activity article -->
+          <!-- start 4 activity article -->
+          <a class="transform-pick-2" href="#">
+            <div class="activitypick">
+              <img
+                class="img-activity"
+                src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc Natinal des Calanques"
+              />
+              <h3 class="activity-titlepick">Parc National des Calanques</h3>
+            </div>
+          </a>
+          <!-- end 4 activity article  -->
+          <!-- start 5&6 twin-activity article -->
           <div class="twin-activity">
-            <div class="twin-activitypick-s">
-              <img
-                class="img-twin-acttivity-s"
-                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre-Dame-de-la-Garde"
-              />
-
-              <!-- <div class="description_contener"> -->
-              <h3 class="activity-titlepick">Notre Dame de la Garde</h3>
-              <!-- </div> -->
-            </div>
-            <div class="twin-activitypick-l">
-              <img
-                class="img-twin-acttivity-l"
-                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt="Parc Longchamp"
-              />
-              <!-- <div class="description_contener"> -->
-              <h3 class="activity-titlepick">Parc Longchamp</h3>
-              <!-- </div> -->
-            </div>
+            <a class="transform-pick-2" href="#">
+              <div class="twin-activitypick-s">
+                <img
+                  class="img-twin-acttivity-s"
+                  src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  alt="Notre-Dame-de-la-Garde"
+                />
+                <h3 class="activity-titlepick">Notre Dame de la Garde</h3>
+              </div>
+            </a>
+            <a class="transform-pick-2" href="#">
+              <div class="twin-activitypick-l">
+                <img
+                  class="img-twin-acttivity-l"
+                  src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  alt="Parc Longchamp"
+                />
+                <h3 class="activity-titlepick">Parc Longchamp</h3>
+              </div>
+            </a>
           </div>
-          <!---------------------------end 4&6 twin-activity article ------------------------------4&6--->
+          <!-- end 4&6 twin-activity article  -->
         </article>
-        <!---------------------------end twin-activity article ------------------------------------------>
+        <!-- end twin-activity article  -->
       </section>
-      <!--------------------------------------------end activity section-------------------------------------------->
-      <!--------------------------------------------start footer---------------------------------------------------->
+      <!-- end activity section -->
+      <!-- -End div page wrapper  -->
+      <!-- start footer -->
     </div>
     <footer>
-      <!--------------------------------------------------start 3 ul footer --------------------------------------->
+      <!-- start 3 ul footer  -->
       <nav class="footer-nav">
         <div class="end_menu">
           <ul>
@@ -396,6 +417,5 @@
         </div>
       </nav>
     </footer>
-    <!----------------------------------------End div page wrapper & body------------------------------------------------------>
   </body>
 </html>
