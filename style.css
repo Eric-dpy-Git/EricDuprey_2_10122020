@@ -1,4 +1,9 @@
+/* @code by Yed@ */
 /* Définition des nouvelles polices nommées Raleway */
+@font-face {
+  font-family: "Rancho";
+  src: url("font/Rancho-Regular.ttf");
+}
 @font-face {
   font-family: "Raleway";
   src: url("font/Raleway-VariableFont_wght.ttf");
@@ -33,6 +38,9 @@ section h2 {
   margin: 2em 0 0 1em;
   padding: 0;
 }
+h3 {
+  font-weight: 700;
+}
 /* no color & underline links */
 a:link {
   color: black;
@@ -41,6 +49,27 @@ a:link {
 a:visited {
   color: black;
 }
+/* stars style */
+.fa-star {
+  font-size: 0.7em;
+  color: #0065fc;
+}
+/* to make empty stars */
+.e {
+  color: #cfcdcd;
+}
+/* for the user experience and my pleasure */
+.transform-pick-1:hover,
+.transform-pick-2:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+/* for the user experience and my pleasure */
+#logo-link:hover {
+  font-size: 60px;
+  text-shadow: 5px 15px 5px lightgrey;
+  transition: 500ms;
+}
 /*----------start header styles-----------------------*/
 /* three blocks in header */
 header {
@@ -48,14 +77,25 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* To push the other boxes to the right*/
+/* to push the other boxes to the right*/
 #logodiv {
   flex-basis: 60%;
 }
-/* logo size */
-img#logo {
-  width: 120px;
+/* to be inline  */
+#logo-script {
+  margin: 0;
 }
+/* font instead the logo image */
+#logo-link {
+  font-family: Rancho;
+  font-size: 50px;
+  color: #0065fc;
+}
+/* if it was an image logo ---> size */
+/* img#logo {
+  width: 120px;
+} */
+
 /* to size the Nav box */
 #upnav {
   display: flex;
@@ -110,25 +150,28 @@ h1 {
 }
 /*formatting locate button*/
 #geoloc {
+  background-color: lightgray;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 3em;
-  width: 3em;
+  height: 40px;
+  width: 40px;
 }
 /*formatting field*/
 #case {
   font-weight: bolder;
   border: solid 1px lightgray;
-  height: 3em;
-  width: 20em;
+  height: 40px;
+  width: 200px;
   padding-left: 2em;
+  border-radius: none;
 }
 /*formatting submit button*/
 #bouton {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  height: 3em;
+  height: 40px;
+  width: 90px;
   background-color: #0065fc;
   color: white;
   font-weight: 800;
@@ -192,7 +235,7 @@ h1 {
 }
 /*---------------------------end Filter section-----------------------*/
 /* ---------------------start the result section--------------------------- */
-/* icon information */
+/* info icon */
 .fa-info-circle {
   font-size: 2em;
   color: lightgray;
@@ -235,11 +278,6 @@ h4 {
   align-items: center;
   align-content: space-between;
 }
-.transform-pick-1:hover,
-.transform-pick-2:hover {
-  transform: scale(1.1);
-  transition: 500ms;
-}
 /* pick box x 6 */
 .pickbox {
   display: flex;
@@ -279,15 +317,6 @@ h4 {
   font-size: 0.8em;
   margin-top: 0em;
   margin-bottom: 0em;
-}
-/* stars style */
-.fa-star {
-  font-size: 0.7em;
-  color: #0065fc;
-}
-/* to make empty stars */
-.e {
-  color: #cfcdcd;
 }
 /* style "Afficher plus" */
 #showmore {
@@ -331,7 +360,7 @@ h4 {
 }
 /* picture inside box */
 .img_pop {
-  width: 30%;
+  width: 40%;
   padding: 2% 0 2% 2%;
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;

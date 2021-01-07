@@ -1,22 +1,25 @@
 @media screen and (max-width: 425px) {
-  /*  transitions for responsive find on : https://www.youtube.com/watch?v=d3eXakVNtuo */
+  /* @code by Yed@ for the user experience and my pleasure : transitions for responsive find on : https://www.youtube.com/watch?v=d3eXakVNtuo */
   * {
     transition: all 1500ms ease;
   }
-  /*  */
+  /* body for small screen phone size */
   body {
     width: 320px;
     margin: 0 auto;
   }
+  /*  to find "Hébergement et Activité" at the bottom of the log as on the model  */
   #upnav {
     order: 1;
     flex-basis: 100%;
   }
+  /*  to find the blue bar at the bottom as the model  */
   #hebe {
     width: 50%;
     border-top: none;
     border-bottom: solid 3px blue;
   }
+  /*  to find the ligtgray bar at the bottom as the model  */
   #acti {
     width: 50%;
     border-top: none;
@@ -24,51 +27,43 @@
   }
   /* -------end header responsive----------- */
   /* ------start search section responsive---- */
-
+  /* to center search bar */
   #allform {
-    margin: 0 0 0 2em;
+    margin: 0 0 0 1.5em;
   }
-
+  /* smaller search bar */
   #case {
-    width: 15em;
+    width: 180px;
   }
-
+  /* to make disappear large submit button */
   #bouton {
     display: none;
   }
-
+  /* to show smaller button */
   #bouton-small {
     display: initial;
     border-radius: 10px;
-    height: 3em;
-    width: 4em;
+    height: 40px;
+    width: 40px;
     background-color: #0065fc;
     color: white;
-    margin-left: -8px;
+    margin-left: -12px;
     border: none;
-  }
-  #hebe-anchor {
-    font-size: 0.7em;
   }
   /* ------end search section resposive---- */
   /* ------start filtersection resposive---- */
-
+  /* full size for nothing in front */
   #filter {
     flex-basis: 100%;
   }
-
+  /* display column is nicer */
   .main-filter-box {
-    width: 75%;
     display: flex;
     flex-direction: column;
   }
-
-  .filter_text {
-    font-size: 0.8em;
-  }
   /* ------end filtersection resposive---- */
   /* ------start result aside section---- */
-
+  /* smaller boxes */
   .result {
     width: 330px;
   }
@@ -79,72 +74,61 @@
   .aside-box {
     width: 320px;
   }
+  /* to centered */
   #pop-title {
     margin-bottom: 1em;
   }
   .poppick {
     margin: 0;
   }
-
   /* to make the fa stay inline */
   .fa-chart-line {
     margin-left: 3em;
   }
 }
-
 @media all and (min-width: 426px) and (max-width: 1023px) {
+  /* for the user experience and my pleasure : transitions for responsive find on : https://www.youtube.com/watch?v=d3eXakVNtuo */
   * {
     transition: all 1500ms ease;
   }
+  /* body for small screen tablet size */
   body {
     max-width: 750px;
   }
-
+  /* to keep inline header  */
   #logodiv {
     flex-basis: 30%;
   }
-
+  /* layout adjustents */
   #acti {
     margin-left: 5em;
   }
-
+  /* largeur box */
   .main-filter-box {
     width: 100%;
   }
-
-  .filter_text {
-    font-size: 0.8em;
-  }
-
+  /* icon on right */
   .fa-chart-line {
     margin-left: 22em;
   }
-
-  #aside_for_flex {
-    min-width: 650px;
-    height: 300px;
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    margin: 0 0 1em 0;
-  }
-
+  /* change the box style */
   .aside-box {
     display: flex;
     flex-direction: row;
   }
+  /* horizontal sizing */
+  #aside_for_flex {
+    width: 750px;
+    height: 300px;
+  }
+  /* change the boxes size */
   .poppick {
-    min-width: 200px;
-    max-width: 210px;
+    width: 200px;
+    width: 210px;
     min-height: 130px;
   }
-  .titlepick,
-  .subtitlepick {
-    font-size: 80%;
-  }
+  /* end menu stay inline */
   .end_menu {
     margin: 0;
   }
 }
-
-/* visibility hidden 
-content after */
