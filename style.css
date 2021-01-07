@@ -33,7 +33,7 @@ body {
 article h2,
 aside h2,
 section h2 {
-  font-family: Rsbold;
+  font-family: Rsbold, Raleway, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3em;
   margin: 2em 0 0 1em;
   padding: 0;
@@ -87,7 +87,7 @@ header {
 }
 /* font instead the logo image */
 #logo-link {
-  font-family: Rancho;
+  font-family: Rancho, Raleway, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 50px;
   color: #0065fc;
 }
@@ -117,7 +117,7 @@ header {
 /* for the bolder nav font an border top align*/
 #ins {
   border-top: 3px solid white;
-  font-family: Rsbold;
+  font-family: Rsbold, Raleway, Verdana, Geneva, Tahoma, sans-serif;
 }
 /* nav elements color  */
 #hebe-color,
@@ -132,7 +132,7 @@ header {
 /* for style the main title */
 h1 {
   font-size: 1.3em;
-  font-family: Rsbold;
+  font-family: Rsbold, Raleway, Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 2em;
 }
 /* for the catchphrase */
@@ -164,7 +164,7 @@ h1 {
   height: 40px;
   width: 200px;
   padding-left: 2em;
-  border-radius: none;
+  border-radius: 0;
 }
 /*formatting submit button*/
 #bouton {
@@ -322,7 +322,7 @@ h4 {
 #showmore {
   margin: 0 0 2em 0;
   padding: 0 0 0 2em;
-  font-family: Rsbold;
+  font-family: Rsbold, Raleway, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
   font-size: 1em;
 }
@@ -469,7 +469,7 @@ footer li {
   font-size: 1em;
 }
 footer li h2 {
-  font-family: Rsbold;
+  font-family: Rsbold, Raleway, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2em;
 }
 /* same layout as the model  */
