@@ -1,4 +1,4 @@
-Hy,
+Hello, welcome on my Github repository,
 
 That is my first code !
 
